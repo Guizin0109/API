@@ -14,10 +14,6 @@ livros = [
      "ano": 2005}
 ]
 
-@app.route("/")
-def inicio():
-    return {"mensagem": "API funcionando"}
-
 @app.route("/livros", methods=["GET"])
 def listar_livros():
     return jsonify(livros)
