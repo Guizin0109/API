@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 livros = [
     {"id": 1, 
-     "titulo": "Harry Potter",
-     "autor": "J.K. Rowling",
-     "ano": 1997},
+     "titulo": "O Hobbit - Edição Especial",
+  "autor": "J.R.R. Tolkien",
+  "ano": 1937},
     {"id": 2,
-     "titulo": "Percy Jackson",
-     "autor": "Rick Riordan", 
-     "ano": 2005}
+     "titulo": "A Menina que Roubava Livros",
+  "autor": "Markus Zusak",
+  "ano": 2005}
 ]
 
 @app.route("/livros", methods=["GET"])
